@@ -14,8 +14,6 @@ router.get("/tasks", function (req, res, next) {
       var val = tasks[key];
       data.push([val.title, val._id]);
     });
-    //res.json(tasks);
-    //res.send(tasks);
     res.send(data);
   });
 });
